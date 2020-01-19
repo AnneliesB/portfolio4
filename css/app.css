@@ -14,13 +14,50 @@ body { background-color: black; color: white; }
 
 .about h2 { color: white; text-align: center; font-family: operetta-12, serif; font-weight: 400; font-style: light; }
 
-.projects { height: 100vh; margin-top: 25vh; }
+.projects { min-height: 100vh; margin-top: 25vh; }
 
-.project-loop { height: 100px; background-size: contain; background-repeat: repeat-x; animation: projectLoop 6000s linear infinite; }
+.project { margin-top: 5em; }
 
-.project-loop-designosource { background-image: url("../images/designosource.svg"); }
+.project-loop { height: 100px; background-size: contain; background-repeat: repeat-x; }
+
+.project-loop-designosource { background-image: url("../images/designosource.svg"); animation: projectLoop 6000s linear infinite; }
+
+.project-loop-flivo { background-image: url("../images/flivo.svg"); animation: projectLoop 6000s linear infinite reverse; }
+
+.project-loop-chat { background-image: url("../images/chat.svg"); animation: projectLoop 6000s linear infinite; }
+
+.project-loop-planit { background-image: url("../images/planit.svg"); animation: projectLoop 6000s linear infinite reverse; }
+
+.subtitle { display: flex; justify-content: space-between; align-content: center; margin-top: 1.5em; padding: 0 0.5em; flex-basis: auto; }
+
+.subtitle div:first-child { flex: 1; height: 2px; width: 100%; background-color: white; margin-top: 10px; margin-right: 0.5em; }
+
+.subtitle div:nth-child(2) { font-size: 1.2em; }
+
+.description { padding: 0 0.5em; line-height: 1.4em; font-size: 1em; }
 
 @keyframes projectLoop { from { background-position: 0 0; }
   to { background-position: -599999px 0; } }
+.contact { height: 100vh; }
+
+.contact-main { padding-top: 40vh; }
+
+.contact h2, .contact h3 { font-family: operetta-12, serif; font-weight: 400; font-style: normal; margin: 0; }
+
+.contact h2 { font-size: 3.5em; text-align: center; }
+
+.contact-flex { display: flex; justify-content: space-between; max-width: 100%; }
+
+.line { flex: 1; height: 2px; background-color: white; margin-top: 10px; margin-right: 0.5em; }
+
+.contact-subtitle { display: flex; justify-content: space-between; align-content: center; margin-top: 0.4em; padding: 0 0.5em; flex-basis: auto; width: 80%; margin-left: auto; margin-right: auto; }
+
+.contact-subtitle div:nth-child(2) { flex: 1; height: 2px; width: 100%; background-color: white; margin-top: 13px; margin-left: 0.5em; }
+
+.contact-subtitle div:nth-child(1) { font-size: 1.2em; }
+
+.contact h3 { margin: 0; }
+
+.footer { margin-top: 45vh; text-align: center; font-family: operetta-12, serif; font-weight: 300; font-style: normal; font-size: 0.9em; margin-bottom: 1.2em; }
 
 /*# sourceMappingURL=app.css.map */
