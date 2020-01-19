@@ -195,21 +195,10 @@ body{
 
 .contact-subtitle div:nth-child(1){
     font-size: 1.2em;
+    font-family: operetta-12, serif;
+    font-weight: 300;
+    font-style: normal;
 }
-// .contact-flex {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 0 0.5em;
-//     max-width: 100%;
-// }
-
-// .contact-flex div:nth-child(2){
-//     flex:1;
-//     height: 2px;
-//     background-color: $light;
-//     margin-top: 10px;
-//     margin-right: 0.5em;
-// }
 
 .contact h3{
     margin: 0;
@@ -223,5 +212,5 @@ body{
     font-weight: 300;
     font-style: normal;
     font-size: 0.9em;
-    margin-bottom: 1.2em;
+    margin-bottom: 2em;
 }

@@ -54,10 +54,10 @@ body { background-color: black; color: white; }
 
 .contact-subtitle div:nth-child(2) { flex: 1; height: 2px; width: 100%; background-color: white; margin-top: 13px; margin-left: 0.5em; }
 
-.contact-subtitle div:nth-child(1) { font-size: 1.2em; }
+.contact-subtitle div:nth-child(1) { font-size: 1.2em; font-family: operetta-12, serif; font-weight: 300; font-style: normal; }
 
 .contact h3 { margin: 0; }
 
-.footer { margin-top: 45vh; text-align: center; font-family: operetta-12, serif; font-weight: 300; font-style: normal; font-size: 0.9em; margin-bottom: 1.2em; }
+.footer { margin-top: 45vh; text-align: center; font-family: operetta-12, serif; font-weight: 300; font-style: normal; font-size: 0.9em; margin-bottom: 2em; }
 
 /*# sourceMappingURL=app.css.map */
