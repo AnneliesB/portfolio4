@@ -1,0 +1,92 @@
+$dark: black;
+$light: white;
+
+body{
+    background-color: $dark;
+    color: $light;
+}
+
+.top{
+    height: 100vh;
+    background-image: url("../images/develmode.svg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+  
+    animation: backgroundAnimation 6000s linear infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    from { background-position: 0 0; }
+    to { background-position: 0 -999999px; }
+}
+
+.heading{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: $dark;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.heading h1{
+    color: $light;
+    font-family: operetta-12, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    line-height: 110%;
+}
+
+.about{
+    height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+}
+
+.about div{
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about h2{
+    color: $light;
+    text-align: center;
+    font-family: operetta-12, serif;
+    font-weight: 400;
+    font-style: light;
+}
+
+.projects{
+    height: 100vh;
+    margin-top: 25vh;
+}
+
+.project-loop{
+    height: 100px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    animation: projectLoop 6000s linear infinite;
+}
+
+.project-loop-designosource{
+    background-image: url("../images/designosource.svg");
+}
+
+
+
+@keyframes projectLoop {
+    from { background-position: 0 0; }
+    to { background-position: -599999px 0; }
+}

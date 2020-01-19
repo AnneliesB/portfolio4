@@ -1,46 +1,26 @@
-/*
-Error: Invalid CSS after "    height:": expected expression (e.g. 1px, bold), was "}"
-        on line 20 of /Users/anneliesbellon/Desktop/portfolio4/css/app.scss
+body { background-color: black; color: white; }
 
-15: }
-16: 
-17: .circle{
-18:     width: 90%;
-19:     height:
-20: }
+.top { height: 100vh; background-image: url("../images/develmode.svg"); background-size: 100%; background-repeat: repeat-y; animation: backgroundAnimation 6000s linear infinite alternate; }
 
-Backtrace:
-/Users/anneliesbellon/Desktop/portfolio4/css/app.scss:20
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    height:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 20 of /Users/anneliesbellon/Desktop/portfolio4/css/app.scss\A \A 15: }\A 16: \A 17: .circle{\A 18:     width: 90%;\A 19:     height:\A 20: }"; }
+@keyframes backgroundAnimation { from { background-position: 0 0; }
+  to { background-position: 0 -999999px; } }
+.heading { position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; background-color: black; border-radius: 100%; height: 300px; width: 300px; justify-content: center; display: flex; align-items: center; }
+
+.heading h1 { color: white; font-family: operetta-12, serif; font-weight: 400; font-style: normal; font-size: 2.8em; text-transform: uppercase; line-height: 110%; }
+
+.about { height: 100vh; }
+
+.about div { position: relative; top: 50vh; left: 50%; transform: translate(-50%, -50%); }
+
+.about h2 { color: white; text-align: center; font-family: operetta-12, serif; font-weight: 400; font-style: light; }
+
+.projects { height: 100vh; margin-top: 25vh; }
+
+.project-loop { height: 100px; background-size: contain; background-repeat: repeat-x; animation: projectLoop 6000s linear infinite; }
+
+.project-loop-designosource { background-image: url("../images/designosource.svg"); }
+
+@keyframes projectLoop { from { background-position: 0 0; }
+  to { background-position: -599999px 0; } }
+
+/*# sourceMappingURL=app.css.map */

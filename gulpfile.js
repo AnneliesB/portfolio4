@@ -7,7 +7,7 @@ function sass2css(done){
     .pipe(sass({
         outputStyle: "compressed"
     }).on('error', sass.logError))
-    .pipe(dest("./stylesheets/dist/css/"));
+    .pipe(dest("./stylesheets/dist"));
     done();
 }
 
