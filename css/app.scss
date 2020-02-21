@@ -1,26 +1,31 @@
 $dark: black;
 $light: white;
 
-body{
+body {
     background-color: $dark;
     color: $light;
 }
 
-.top{
+.top {
     height: 100vh;
     background-image: url("../images/develmode.svg");
     background-size: 100%;
     background-repeat: repeat-y;
-  
+
     animation: backgroundAnimation 6000s linear infinite alternate;
 }
 
 @keyframes backgroundAnimation {
-    from { background-position: 0 0; }
-    to { background-position: 0 -999999px; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -999999px;
+    }
 }
 
-.heading{
+.heading {
     position: relative;
     top: 50%;
     left: 50%;
@@ -36,7 +41,7 @@ body{
 
 }
 
-.heading h1{
+.heading h1 {
     color: $light;
     font-family: operetta-12, serif;
     font-weight: 400;
@@ -46,132 +51,77 @@ body{
     line-height: 110%;
 }
 
-.about{
+.about {
     height: 100vh;
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
 }
 
-.about div{
+.about div {
     position: relative;
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.about h2{
+.about h2 {
     color: $light;
     text-align: center;
     font-family: operetta-12, serif;
     font-weight: 400;
     font-style: light;
+    padding: 0 1em;
 }
 
-.projects{
-    min-height: 100vh;
-    margin-top: 25vh;
-}
-
-.project{
-    margin-top: 5em;
-}
-
-.project-loop{
-    height: 100px;
-    background-size: contain;
-    background-repeat: repeat-x;
-}
-
-.project-loop-designosource{
-    background-image: url("../images/designosource.svg");
-    animation: projectLoop 6000s linear infinite;
-}
-
-.project-loop-flivo{
-    background-image: url("../images/flivo.svg");
-    animation: projectLoop 6000s linear infinite reverse;
-}
-
-.project-loop-chat{
-    background-image: url("../images/chat.svg");
-    animation: projectLoop 6000s linear infinite;
-}
-
-.project-loop-planit{
-    background-image: url("../images/planit.svg");
-    animation: projectLoop 6000s linear infinite reverse;
-}
-
-.subtitle{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin-top: 1.5em;
-    padding: 0 0.5em;
-    flex-basis: auto;
-}
-
-.subtitle div:first-child{
-    flex:1;
-    height: 2px;
-    width: 100%;
-    background-color: $light;
-    margin-top: 10px;
-    margin-right: 0.5em;
-}
-
-.subtitle div:nth-child(2){
-    font-size: 1.2em;
-}
-
-.description{
-    padding: 0 0.5em;
-    line-height: 1.4em;
-    font-size: 1em;
+a{
+    text-decoration: none;
+    color: $light;
 }
 
 @keyframes projectLoop {
-    from { background-position: 0 0; }
-    to { background-position: -599999px 0; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -599999px 0;
+    }
 }
 
-.contact{
+.contact {
     height: 100vh;
-
 }
 
-.contact-main{
+.contact-main {
     padding-top: 40vh;
 }
 
-.contact h2, .contact h3{
+.contact h2,
+.contact h3 {
     font-family: operetta-12, serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
 }
 
-.contact h2{
+.contact h2 {
     font-size: 3.5em;
     text-align: center;
 }
 
-.contact-flex{
+.contact-flex {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
 }
 
-.line{
-    flex:1;
+.line {
+    flex: 1;
     height: 2px;
     background-color: $light;
     margin-top: 10px;
     margin-right: 0.5em;
 }
 
-.contact-subtitle{
+.contact-subtitle {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -181,11 +131,11 @@ body{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
-.contact-subtitle div:nth-child(2){
-    flex:1;
+.contact-subtitle div:nth-child(2) {
+    flex: 1;
     height: 2px;
     width: 100%;
     background-color: $light;
@@ -193,24 +143,52 @@ body{
     margin-left: 0.5em;
 }
 
-.contact-subtitle div:nth-child(1){
+.contact-subtitle div:nth-child(1) {
     font-size: 1.2em;
     font-family: operetta-12, serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.contact h3{
+.contact h3 {
     margin: 0;
 
 }
 
-.footer{
+.footer {
     margin-top: 45vh;
     text-align: center;
     font-family: operetta-12, serif;
     font-weight: 300;
     font-style: normal;
     font-size: 0.9em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+@media(min-width: 600px){
+    .footer {
+        margin-bottom: 2em;
+    }
+}
+
+@media(min-width: 900px) {
+    .heading {
+        height: 400px;
+        width: 400px;
+    }
+
+    .heading h1 {
+        font-size: 3.2em;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .contact{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
